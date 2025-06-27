@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 const isGithubPages = process.env.DEPLOY_TARGET === "gh-pages";
 
-const repoName = "kordon";
+const repoName = "kordonfm";
 const nextConfig: NextConfig = {
   output: "export",
   basePath: isGithubPages ? `/${repoName}` : "",
