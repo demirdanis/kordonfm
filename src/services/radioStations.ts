@@ -6,7 +6,7 @@ export const radioStations = [
     description: "Yeni Dostunuz",
     color: "bg-gradient-to-r from-green-600 to-green-800",
     genre: "Hit Müzik",
-    streamUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/api/radio/imbat-fm`,
+    streamUrl: `https://cors-anywhere.herokuapp.com/http://162.244.80.31:8746/;`,
   },
   {
     id: "kordon-fm",

@@ -1,11 +1,11 @@
 import type { NextConfig } from "next";
 const isGithubPages = process.env.DEPLOY_TARGET === "gh-pages";
 
-const repoName = "kordonfm";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ""; //"/kordonfm";
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isGithubPages ? `/${repoName}` : "",
-  assetPrefix: isGithubPages ? `/${repoName}/` : "",
+  basePath: isGithubPages ? `${basePath}` : "",
+  assetPrefix: isGithubPages ? `${basePath}/` : "",
   images: { unoptimized: true },
   trailingSlash: true,
 };
